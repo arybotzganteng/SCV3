@@ -4,7 +4,8 @@ let handler = async (m, { conn, text }) => {
 ┌─〔 GRUB BOT 〕
 │ 
 ├➥ *Link grub bot by R-Txzy*
-│https://chat.whatsapp.com/HJ9pD2XJ8vq7whuAYOvT1Y
+│•https://chat.whatsapp.com/HJ9pD2XJ8vq7whuAYOvT1Y
+│•https://chat.whatsapp.com/FrNk70HmmFQ1ey5yeYuC80
 ├➥ *Yang ada Bot Boleh*
 │   *masukin ke grub✅*
 ├➥ *Admin Selalu Benar✅*
@@ -17,7 +18,7 @@ let handler = async (m, { conn, text }) => {
 └─「 *BOT* 」
 
 `.trim()
-conn.send2ButtonLoc(m.chat, await (await fetch(fla + 'GRUB SIRAD')).buffer(), ext, 'Grub Bot By Raditya', 'SIAP BANG🗿', 'AUTO JOIN', 'Donasi', '.donasi', m)
+conn.send2ButtonLoc(m.chat, await (await fetch(fla + 'GRUB SIRAD')).buffer(), ext, 'Mwhehe', 'SIAP BANG🗿', 'AUTO JOIN', 'Donasi', '.donasi', m)
 
 }
 handler.help = ['Gruboffical']
