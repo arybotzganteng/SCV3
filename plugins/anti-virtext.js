@@ -21,7 +21,7 @@ Maaf Kamu akan dikick oleh *RAD BOT*
  if (isBotAdmin) {
    conn.groupRemove(m.chat, [asu])
      } else { 
-     	m.reply('```JADIKAN RADBOTZ SEBAGAI ADMIN !!!```')
+     	m.reply('```JADIKAN GWEJH SEBAGAI ADMIN !!!```')
     }
   } conn.sendMessage(vir + '@s.whatsapp.net', `${m.text}`, MessageType.text)
 }
