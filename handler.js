@@ -530,7 +530,7 @@ module.exports = {
       } catch (e) {
         console.log(m, m.quoted, e)
       }
-    if (opts['autoread']) await this.chatRead(m.chat).catch(() => { })
+    //if (opts['autoread']) await this.chatRead(m.chat).catch(() => { })
     this.chatRead(m.chat).catch(() => { })
     }
   },
