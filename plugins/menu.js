@@ -8,7 +8,8 @@ const chats = conn.chats.all()
 const groups = chats.filter(v => v.jid.endsWith('g.us'))
 const defaultMenu = {
   before: `
-┌─〔 %me 〕──➤*
+┌───〔 %me 〕──⭓
+│
 │*⦁ Hai, %name!
 │*⦁ Tersisa *%limit Limit*
 │*⦁ Role *%role*
@@ -23,11 +24,12 @@ const defaultMenu = {
 │*⦁ Database: %rtotalreg dari %totalreg
 │*⦁ GitHub: https://github.com/AlyaaXd
 │*⦁ https://github.com/Nanzz681
-└─────────────➤*
+│
+└─────⭓
 %readmore`.trimStart(),
-  header: '┌─〔 %category 〕*',
-  body: '│▸* %cmd %islimit %isPremium',
-  footer: '└────➤*\n',
+  header: '┌──〔 %category 〕─⭓*',        
+  body: '│▸*  %cmd %islimit %isPremium',
+  footer: '└────⭓\n',
   after: `
 *%npmname@^%version*
 ${'```%npmdesc```'}
@@ -81,10 +83,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   }
   if (teks == 'edukasi') tags = {
     'edukasi': 'Edukasi'
-}
-  if (teks == 'nsfw') tags = {
-    'hentai': 'Hentai',
-    'bokep': 'Bokep'
   }
   if (teks == 'stiker') tags = {
     'sticker': 'Stiker'
