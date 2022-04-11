@@ -287,9 +287,8 @@ module.exports = {
           status: 0,
         }
       } catch (e) {
-        console.error(e)
-      if (opts['autoread']) await this.chatRead(m.chat).catch(() => { })
-      if (opts['nyimak']) return
+        console.error(e) 
+      if (opts['nyimak']) continue
       if (!m.fromMe && opts['self']) return
       if (opts['pconly'] && m.chat.endsWith('g.us')) return
       if (opts['gconly'] && !m.chat.endsWith('g.us')) return
