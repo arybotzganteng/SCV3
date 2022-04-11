@@ -8,25 +8,25 @@ const chats = conn.chats.all()
 const groups = chats.filter(v => v.jid.endsWith('g.us'))
 const defaultMenu = {
   before: `
-*┌─〔 %me 〕──➤*
-*│*⦁ Hai, %name!
-*│*⦁ Tersisa *%limit Limit*
-*│*⦁ Role *%role*
-*│*⦁ Level *%level (%exp / %maxexp)* [%xp4levelup]
-*│*⦁ %totalexp XP secara Total
-*│* 
-*│*⦁ Tanggal: *%week %weton, %date*
-*│*⦁ Tanggal Islam: *%dateIslamic*
-*│*⦁ Waktu: *%time*
-*│*
-*│*⦁ Uptime: *%uptime (%muptime)*
-*│*⦁ Database: %rtotalreg dari %totalreg
-*│*⦁ GitHub: https://github.com/AlyaaXd
-*└─────────────➤*
+┌─〔 %me 〕──➤*
+│*⦁ Hai, %name!
+│*⦁ Tersisa *%limit Limit*
+│*⦁ Role *%role*
+│*⦁ Level *%level (%exp / %maxexp)* [%xp4levelup]
+│*⦁ %totalexp XP secara Total
+│
+│*⦁ Tanggal: *%week %weton, %date*
+│*⦁ Tanggal Islam: *%dateIslamic*
+│*⦁ Waktu: *%time*
+│
+│*⦁ Uptime: *%uptime (%muptime)*
+│*⦁ Database: %rtotalreg dari %totalreg
+│*⦁ GitHub: https://github.com/AlyaaXd,https://github.com/Nanzz681
+└─────────────➤*
 %readmore`.trimStart(),
-  header: '*┌─〔 %category 〕*',
-  body: '*│▸* %cmd %islimit %isPremium',
-  footer: '*└────➤*\n',
+  header: '┌─〔 %category 〕*',
+  body: '│▸* %cmd %islimit %isPremium',
+  footer: '└────➤*\n',
   after: `
 *%npmname@^%version*
 ${'```%npmdesc```'}
