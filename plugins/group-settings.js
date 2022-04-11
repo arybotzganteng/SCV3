@@ -2,7 +2,7 @@ let handler = async (m, { conn }) =>
 conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
                     "listMessage":  {
                         "title": `Hai Kak ${conn.getName(m.sender)}\n*setelan grub*`,
-                        "description": "\n\n*@Raditya*",
+                        "description": "\n\n*@Nanzz*",
                         "footerText": "jika ada bug atau erorr silahkan laporkan ke owner bot.",
                         "buttonText": "*KLIK DISINI*",
                         "listType": "SINGLE_SELECT",
