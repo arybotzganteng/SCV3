@@ -6,13 +6,13 @@ let handler = async(m, { conn }) => {
 ├ 2 Bulan
 ├ 1 Bulan
 ├ 1 Minggu
-├ Trial 4 jam
+├ Trial 3 Hari
 └────
 Silahkan klik pada "List Harga" untuk melihat list.
 
 Pembayaran:
-Pulsa (ISAT): 6285730903853 (+5.000)
-Gopay: 6285730903853
+Pulsa (TELKOMSEL): 082140059454
+Gopay: 082140059454
 `.trim()
     const button = {
         buttonText: 'List Harga',
