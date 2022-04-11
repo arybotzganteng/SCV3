@@ -229,7 +229,7 @@ module.exports = {
         if (typeof chat !== 'object') global.db.data.chats[m.chat] = {}
         if (chat) {
           if (!('isBanned' in chat)) chat.isBanned = false
-          if (!('welcome' in chat)) chat.welcome = false
+          if (!('welcome' in chat)) chat.welcome = true
           if (!('detect' in chat)) chat.detect = false
           if (!('sWelcome' in chat)) chat.sWelcome = ''
           if (!('sBye' in chat)) chat.sBye = ''
@@ -245,7 +245,7 @@ module.exports = {
           if (!('viewonce' in chat)) chat.viewonce = true
         } else global.db.data.chats[m.chat] = {
           isBanned: false,
-          welcome: false,
+          welcome: true,
           detect: false,
           sWelcome: '',
           sBye: '',
@@ -530,7 +530,7 @@ module.exports = {
       } catch (e) {
         console.log(m, m.quoted, e)
       }
-    //  if (opts['autoread']) await this.chatRead(m.chat).catch(() => { })
+    if (opts['autoread']) await this.chatRead(m.chat).catch(() => { })
     this.chatRead(m.chat).catch(() => { })
     }
   },
@@ -658,7 +658,7 @@ global.dfail = (type, m, conn) => {
   }[type]
   if (msg) return conn.sendButton(m.chat, msg, watermark, 'OK', 'Nanii', m)
   let botAdmin = {
-    botAdmin: 'Mikir dkit lah bang *BOT NYA BUKAN ADMIN*',
+    botAdmin:  '*BGWEJH UKAN ADMIN*',
   }[type]
   if (botAdmin) return conn.sendButton(m.chat, botAdmin, 'lupa saya', 'Eh iya ya', 'Nanii', m)
   let unreg = {
