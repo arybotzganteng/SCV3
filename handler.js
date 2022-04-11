@@ -287,7 +287,8 @@ module.exports = {
           status: 0,
         }
       } catch (e) {
-        console.error(e) 
+        console.error(e)
+      }
       if (opts['nyimak']) return
       if (!m.fromMe && opts['self']) return
       if (opts['pconly'] && m.chat.endsWith('g.us')) return
