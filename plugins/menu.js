@@ -22,7 +22,7 @@ const defaultMenu = {
 │*⦁ Uptime: *%uptime (%muptime)*
 │*⦁ Database: %rtotalreg dari %totalreg
 │*⦁ GitHub: https://github.com/AlyaaXd
-│*⦁ '\n'
+│*⦁ https://github.com/Nanzz681
 └─────────────➤*
 %readmore`.trimStart(),
   header: '┌─〔 %category 〕*',
@@ -219,7 +219,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 			return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
                     "listMessage":  {
                         "title": `*${ucapan()}, ${name}*`.trim(),
-                        "description": `© *R-Txzy*`.trim(),
+                        "description": `©*Nanzz*`.trim(),
                         "footerText": "Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada owner.",
                         "buttonText": "*Click Here*",
                         "listType": "SINGLE_SELECT",
@@ -381,7 +381,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                         ], "contextInfo": 
 						{ "stanzaId": m.key.id,
                         "participant": "0@s.whatsapp.net",
-                        "remoteJid": "6283136505591-1614953337@g.us",
+                        "remoteJid": "6282130059454-1614953337@g.us",
                         "quotedMessage": m.message
 						}
                     }
