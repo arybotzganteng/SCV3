@@ -21,7 +21,8 @@ const defaultMenu = {
 │
 │*⦁ Uptime: *%uptime (%muptime)*
 │*⦁ Database: %rtotalreg dari %totalreg
-│*⦁ GitHub: https://github.com/AlyaaXd,https://github.com/Nanzz681
+│*⦁ GitHub: https://github.com/AlyaaXd
+│*⦁ '\n'
 └─────────────➤*
 %readmore`.trimStart(),
   header: '┌─〔 %category 〕*',
