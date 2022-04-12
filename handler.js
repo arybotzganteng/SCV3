@@ -26,7 +26,7 @@ module.exports = {
           break
       }
       m.exp = 0
-      m.limit = false
+      m.limit = true
       try {
         let user = global.db.data.users[m.sender]
         if (typeof user !== 'object') global.db.data.users[m.sender] = {}
@@ -35,7 +35,7 @@ module.exports = {
             if (!isNumber(user.level)) user.level = 0
             if (!isNumber(user.exp)) user.exp = 0
             if (!isNumber(user.title)) user.title = 'Nothing'
-            if (!isNumber(user.limit)) user.limit = 100
+            if (!isNumber(user.limit)) user.limit = 50
             if (!isNumber(user.lastclaim)) user.lastclaim = 0
             if (!isNumber(user.lastgetmoney)) user.lastgetmoney = 0
             if (!isNumber(user.money)) user.money = 12000
