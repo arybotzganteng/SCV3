@@ -289,12 +289,12 @@ module.exports = {
       } catch (e) {
         console.error(e)
       }
-      if (opts['nyimak']) continue
+      if (opts['nyimak']) return
       if (!m.fromMe && opts['self']) return
       if (opts['pconly'] && m.chat.endsWith('g.us')) return
       if (opts['gconly'] && !m.chat.endsWith('g.us')) return
       if (opts['swonly'] && m.chat !== 'status@broadcast') return
-      if (opts['autoread']) await this.chatRead(m.chat).catch(() => { })
+      if (opts['autoread']) await this.chatRead(m.chat).catch(() => { }) true
       if (typeof m.text !== 'string') m.text = ''
       for (let name in global.plugins) {
         let plugin = global.plugins[name]
