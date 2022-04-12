@@ -39,7 +39,7 @@ global.APIKeys = { // APIKey Here
   'https://server-api-rey.herokuapp.com': 'apirey',
   'https://bx-hunter.herokuapp.com': 'Ikyy69',
   'https://hardianto.xyz': 'hardianto',
-  'https://neoxr-api.herokuapp.com': 'yntkts',
+  'https://neoxr-api.herokuapp.com': 'cfhXORi7',
   'https://api.xteam.xyz': 'cristian9407',
   'https://api.lolhuman.xyz': 'Dawnfrostkey',
   'https://caliphapi.com': 'ELYASXD',
