@@ -26,7 +26,7 @@ module.exports = {
           break
       }
       m.exp = 0
-      m.limit = true
+      m.limit = false
       try {
         let user = global.db.data.users[m.sender]
         if (typeof user !== 'object') global.db.data.users[m.sender] = {}
