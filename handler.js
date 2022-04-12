@@ -35,10 +35,10 @@ module.exports = {
             if (!isNumber(user.level)) user.level = 0
             if (!isNumber(user.exp)) user.exp = 0
             if (!isNumber(user.title)) user.title = 'Nothing'
-            if (!isNumber(user.limit)) user.limit = 50
+            if (!isNumber(user.limit)) user.limit = 100
             if (!isNumber(user.lastclaim)) user.lastclaim = 0
             if (!isNumber(user.lastgetmoney)) user.lastgetmoney = 0
-            if (!isNumber(user.money)) user.money = 12000
+            if (!isNumber(user.money)) user.money = 999999
             
             if (!isNumber(user.diamond)) user.diamond = 0
             if (!isNumber(user.iron)) user.iron = 0
@@ -437,7 +437,7 @@ module.exports = {
           let xp = 'exp' in plugin ? parseInt(plugin.exp) : 17 // XP Earning per command
           if (xp > 200) m.reply('Ngecit -_-') // Hehehe
           else m.exp += xp
-          if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 0) {
+          if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 100) {
             this.reply(m.chat, `Limit anda habis, silahkan beli melalui *${usedPrefix}buy*`, m)
             continue // Limit habis
           }
@@ -499,7 +499,7 @@ module.exports = {
       if (m) {
         if (m.sender && (user = global.db.data.users[m.sender])) {
           user.exp += m.exp
-          user.limit -= m.limit * 0
+          user.limit -= m.limit * 100
         }
 
         let stat
