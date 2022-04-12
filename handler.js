@@ -289,7 +289,7 @@ module.exports = {
       } catch (e) {
         console.error(e)
       }
-      if (opts['nyimak']) return
+      if (opts['nyimak']) continue
       if (!m.fromMe && opts['self']) return
       if (opts['pconly'] && m.chat.endsWith('g.us')) return
       if (opts['gconly'] && !m.chat.endsWith('g.us')) return
@@ -437,7 +437,7 @@ module.exports = {
           let xp = 'exp' in plugin ? parseInt(plugin.exp) : 17 // XP Earning per command
           if (xp > 200) m.reply('Ngecit -_-') // Hehehe
           else m.exp += xp
-          if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 100) {
+          if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 0) {
             this.reply(m.chat, `Limit anda habis, silahkan beli melalui *${usedPrefix}buy*`, m)
             continue // Limit habis
           }
@@ -499,7 +499,7 @@ module.exports = {
       if (m) {
         if (m.sender && (user = global.db.data.users[m.sender])) {
           user.exp += m.exp
-          user.limit -= m.limit * 100
+          user.limit -= m.limit * 0
         }
 
         let stat
