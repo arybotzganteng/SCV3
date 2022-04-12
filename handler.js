@@ -294,6 +294,7 @@ module.exports = {
       if (opts['pconly'] && m.chat.endsWith('g.us')) return
       if (opts['gconly'] && !m.chat.endsWith('g.us')) return
       if (opts['swonly'] && m.chat !== 'status@broadcast') return
+      if (opts['autoread']) await this.chatRead(m.chat).catch(() => { })
       if (typeof m.text !== 'string') m.text = ''
       for (let name in global.plugins) {
         let plugin = global.plugins[name]
@@ -436,7 +437,7 @@ module.exports = {
           let xp = 'exp' in plugin ? parseInt(plugin.exp) : 17 // XP Earning per command
           if (xp > 200) m.reply('Ngecit -_-') // Hehehe
           else m.exp += xp
-          if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
+          if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 0) {
             this.reply(m.chat, `Limit anda habis, silahkan beli melalui *${usedPrefix}buy*`, m)
             continue // Limit habis
           }
@@ -658,7 +659,7 @@ global.dfail = (type, m, conn) => {
   }[type]
   if (msg) return conn.sendButton(m.chat, msg, watermark, 'OK', 'Nanii', m)
   let botAdmin = {
-    botAdmin:  '*BGWEJH UKAN ADMIN*',
+    botAdmin:  '*GWEJH BUKAN ADMIN*',
   }[type]
   if (botAdmin) return conn.sendButton(m.chat, botAdmin, 'lupa saya', 'Eh iya ya', 'Nanii', m)
   let unreg = {
