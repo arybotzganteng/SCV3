@@ -294,7 +294,7 @@ module.exports = {
       if (opts['pconly'] && m.chat.endsWith('g.us')) return
       if (opts['gconly'] && !m.chat.endsWith('g.us')) return
       if (opts['swonly'] && m.chat !== 'status@broadcast') return
-      if (opts['autoread']) await this.chatRead(m.chat).catch(() => { }) true
+      if (opts['autoread']) await this.chatRead(m.chat).catch(() => { })
       if (typeof m.text !== 'string') m.text = ''
       for (let name in global.plugins) {
         let plugin = global.plugins[name]
