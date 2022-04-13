@@ -15,7 +15,7 @@ handler.all = async function (m, { isBlocked }) {
     try {
         if (m.mentionedJid.includes(this.user.jid) && m.isGroup) {
             await this.send2Button(m.chat,
-                isBanned ? 'AlyaaXzy tidak aktif' : banned ? 'kamu dibanned' : 'AlyaaXzy disini',
+                isBanned ? 'NanzzBotz tidak aktif' : banned ? 'kamu dibanned' : 'NanzzBotz disini',
                 '©AlyaaXzy',
                 isBanned ? 'Unban' : banned ? 'Pemilik Bot' : 'Menu',
                 isBanned ? '.unban' : banned ? '.owner' : '.?',
@@ -30,7 +30,7 @@ handler.all = async function (m, { isBlocked }) {
     if ((m.mtype === 'groupInviteMessage' || m.text.startsWith('https://chat') || m.text.startsWith('Buka tautan ini')) && !m.isBaileys && !m.isGroup) {
         this.send2ButtonLoc(m.chat, await (await fetch(fla + 'sewa bot')).buffer(), `╠═〘 Beli Bot 〙 ═
 ╠➥ *1 Bulan* :      *Rp 10000*
-╠➥ *Permanen* : *Rp 15000*
+╠➥ *Permanen* : *Rp 20000*
 ╠➥ *Premium* :   *Rp 15000*
 ╠➥ *Sc Bot* :        *Masih Beta*
 ║
@@ -72,7 +72,7 @@ handler.all = async function (m, { isBlocked }) {
     if (new Date() * 1 - setting.status > 1000) {
         let _uptime = process.uptime() * 1000
         let uptime = clockString(_uptime)
-        await this.setStatus(`💠Aktif selama ${uptime} | Mode: ${global.opts['self'] ? 'Private' : setting.groupOnly ? 'Hanya Grup' : 'Publik'} |AlyaaXzy by R-Txzy Team`).catch(_ => _)
+        await this.setStatus(`Aktif selama ${uptime} | Mode: ${global.opts['self'] ? 'Private' : setting.groupOnly ? 'Hanya Grup' : 'Publik'} |NanzzBotz by R-Txzy Team`).catch(_ => _)
         setting.status = new Date() * 1
     }
 
