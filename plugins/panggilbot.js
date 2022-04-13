@@ -9,7 +9,7 @@ function clockString(ms) {
   }
 conn.fakeReply(m.chat, stc, '0@s.whatsapp.net', `Uptime : ${clockString(process.uptime() * 1000)}\nBattery : ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? 'Pengisian Daya' : 'RadBotZ'}` : 'tidak diketahui'}`)
 }
-handler.customPrefix = /^(bot|NanzzBotz|Nanzz|nan|nanzz)$/i
+handler.customPrefix = /^(bot|NanzzBotz|Nanzz|nan|nanzz|ayang|sayang)$/i
 handler.command = new RegExp
 
 module.exports = handler
