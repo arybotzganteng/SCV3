@@ -5,7 +5,6 @@ let handler = async(m, { conn }) => {
 ┌〔 List Berlangganan 〕
 ├ 2 Bulan
 ├ 1 Bulan
-├ 1 Minggu
 ├ Trial 3 Hari
 └────
 Silahkan klik pada "List Harga" untuk melihat list.
