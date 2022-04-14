@@ -18,7 +18,7 @@ key: {
 						"jpegThumbnail": fs.readFileSync('./src/RadBotZ.jpg'), //Gambarnye
 					},
 					"title": `Hai ${conn.getName(m.sender)}`, //Kasih namalu 
-					"description": `Rp 9.999.999.999`, 
+					"description": `*YNTKTS*`, 
 					"currencyCode": "Rp",
 					"priceAmount1000": "500000",
 					"retailerId": `ppk`,
