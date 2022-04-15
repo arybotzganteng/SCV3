@@ -1,6 +1,6 @@
 let handler  = async (m, { conn, usedPrefix: _p }) => {
 let info = `╠═〘 PEMBAYARAN 〙 ═
-╠═ Untuk Pembayaran Via Pulsa +5k
+╠═ Untuk Pembayaran Via topup/maxis RM5.00
 ╠➥ Cht Owner
 ║
 ╠═〘 Fitur 〙 ═
@@ -21,13 +21,13 @@ let info = `╠═〘 PEMBAYARAN 〙 ═
 ║ 
 ╠═ ©2021 Rpg wabot-aq
 ╠═ Scrip original by Nurutomo
-╠═〘 AlyaaXzy 〙 ═
+╠═〘 AryBotz 〙 ═
 `.trim()
 
 conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '*Sewa Bot*', 'status@broadcast') 
 }
-handler.help = ['viapulsa']
+handler.help = ['viatopup']
 handler.tags = ['info']
-handler.command = /^viapulsa$/i
+handler.command = /^viatopup$/i
 
 module.exports = handler
