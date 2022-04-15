@@ -1,37 +1,26 @@
-let fetch = require('node-fetch')
-let handler = async (m, { conn, text }) => {
-  let ext= `
-┌─〔 GRUB BOT 〕
-│ 
-├➥ *Link grub bot*
-│•https://chat.whatsapp.com/HJ9pD2XJ8vq7whuAYOvT1Y
-│•https://chat.whatsapp.com/FrNk70HmmFQ1ey5yeYuC80
-├➥ *Yang ada Bot Boleh*
-│   *masukin ke grub✅*
-├➥ *Admin Selalu Benar✅*
-├➥ *Jangan spam karna*
-│   *owner grub hp nya kentang✅*
-├➥ *Sebelum Bergabung Baca*
-│   *Rules Terlebih dahulu❗*
-├➥*©GRUP-BOTZ 2021*
-└─「 *BOT* 」
+let handler  = async (m, { conn, usedPrefix: _p }) => {
+let pp = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text=Group'
+let botol = global.botwm
+let str = `
+✧─────[ *Group Official* ]─────✧
+*Group Bot Official V2* :
+https://chat.whatsapp.com/BCgUSCxQltq8SwcpJe1tDf
+✧──────────···──────────✧
+
+✧─────[ *Group Official* ]─────✧
+ *Group Bot Whatsappp* ¹ :
+https://chat.whatsapp.com/EheAWPrQMhV25xW0N7l7WD
+✧──────────···──────────✧
+✧─────[ *Group Official* ]─────✧
+ *Group Bot Whatsappp* ² : https://chat.whatsapp.com/GzDQlgoUamS5Ok4EOcYRRB
+
+✧──────────···──────────✧
 
 `.trim()
-conn.send2ButtonLoc(m.chat, await (await fetch(fla + 'GRUB SIRAD')).buffer(), ext, 'Mwhehe', 'SIAP BANG🗿', 'AUTO JOIN', 'Donasi', '.donasi', m)
-
+conn.sendButton(m.chat, str, `${botol}`, `⋮☰ Menu`, `.menu`, m)
 }
-handler.help = ['Gruboffical']
-handler.tags = ['main']
-handler.command = /^(gruboffical)$/i
-handler.owner = false
-handler.mods = false
-handler.premium = false
-handler.group = false
-handler.private = false
-
-handler.admin = false
-handler.botAdmin = false
-
-handler.fail = null
+handler.help = ['gcbot']
+handler.tags = ['info']
+handler.command = /^gcbot$/i
 
 module.exports = handler
