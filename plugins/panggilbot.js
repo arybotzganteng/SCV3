@@ -7,9 +7,9 @@ function clockString(ms) {
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
   return [h, m, s].map(v => v.toString().padStart(2, 0) ).join(':')
   }
-conn.fakeReply(m.chat, stc, '0@s.whatsapp.net', `Uptime : ${clockString(process.uptime() * 1000)}\nBattery : ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? 'Pengisian Daya' : 'RadBotZ'}` : 'tidak diketahui'}`)
+conn.fakeReply(m.chat, stc, '0@s.whatsapp.net', `Uptime : ${clockString(process.uptime() * 1000)}\nBattery : ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? 'Pengisian Daya' : 'AryBotz🥀🔥'}` : 'tidak diketahui'}`)
 }
-handler.customPrefix = /^(bot|NanzzBotz|Nanzz|nan|nanzz|ayang|sayang)$/i
+handler.customPrefix = /^(bot|NanzzBotz|Nanzz|nan|nanzz|ary|arybotz|ry|daniel|noel|p|ayg|syg|ayang|sayang)$/i
 handler.command = new RegExp
 
 module.exports = handler
