@@ -10,16 +10,16 @@ let handler = async(m, { conn }) => {
 Silahkan klik pada "List Harga" untuk melihat list.
 
 Pembayaran:
-Pulsa (TELKOMSEL): 082140059454
-Gopay: 082140059454
+Maxis ( *Topup* ): 60147751029
+Hotlink: 60177945983
 `.trim()
     const button = {
         buttonText: 'List Harga',
         description: kamisato,
         sections:  [{title: "Silahkan di pilih", rows: [
-        {title: 'Permanen', description: "Rp20.000\nSewa bot tanpa batasan waktu.", rowId:".owner"},
-        {title: '2 Bulan', description: "Rp15.000\nSewa bot selama 2 Bulan.", rowId:".owner"},
-        {title: '1 Bulan', description: "Rp10.000\nSewa bot selama 1 Bulan.", rowId:".owner"},
+        {title: 'Permanen', description: "RM15.00\nSewa bot tanpa batasan waktu.", rowId:".owner"},
+        {title: '2 Bulan', description: "RM10.00\nSewa bot selama 2 Bulan.", rowId:".owner"},
+        {title: '1 Bulan', description: "RM5.00\nSewa bot selama 1 Bulan.", rowId:".owner"},
         {title: 'Trial', description: "GRATIS\nBot gratis 3 Hari.", rowId:".owner"},
         {title: 'Owner', description: "Chat owner nya jika ada perlu.", rowId:".owner"},
         {title: 'Rules', description: "Kebijakan Privasi, Syarat Ketentuan dan Peraturan.", rowId:".rules"},
