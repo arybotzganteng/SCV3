@@ -14,8 +14,8 @@ let fs = require('fs')
 let chalk = require('chalk')
 
 global.linkGC = ['https://chat.whatsapp.com/FrNk70HmmFQ1ey5yeYuC80'] // ganti jadi group lu
-global.owner = ['6282140059454'] // Masukan nomot kalian
-global.mods = ['6289505165400', '6282221792667'] // Moderator
+global.owner = ['79519874382'] // Masukan nomot kalian
+global.mods = ['6289509772360', '6282140059454'] // Moderator
 global.prems = JSON.parse(fs.readFileSync('./src/premium.json')) // Pengguna premium tidak memerlukan limit
 global.APIs = { // API Prefix
   // name: 'https://website'
@@ -54,7 +54,7 @@ global.APIKeys = { // APIKey Here
 const spack = fs.readFileSync("lib/exif.json")
 const stickerpack = JSON.parse(spack)
 if (stickerpack.spackname == '') {
-  var sticker_name = 'Nanzz'
+  var sticker_name = 'AryBotz'
   var sticker_author = 'Wangsaff'
 } else {
   var sticker_name = stickerpack.spackname
@@ -79,7 +79,7 @@ global.nsfw = 'Fitur NSFW Dimatikan\nKetik *!enable* *nsfw* untuk menggunakan fi
 global.eror = '_*Error*_'
 
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
-global.watermark = '©NanzzBotz' //change the watermark 
+global.watermark = '©AryBotz' //change the watermark 
 global.image = 'https://telegra.ph/file/0bdd84bd5a8099a789828.jpg' //change the image
 global.thumbfoto = 'https://telegra.ph/file/0bdd84bd5a8099a789828.jpg'
 
