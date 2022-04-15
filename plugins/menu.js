@@ -23,15 +23,17 @@ const defaultMenu = {
 │*⦁ Uptime: *%uptime (%muptime)*
 │*⦁ Database: %rtotalreg dari %totalreg
 │*⦁ GitHub: https://github.com/AlyaaXd
-│*⦁ https://github.com/Nanzz681
-│
+│*⦁ Github:https://github.com/Nanzz681
+│*⦁ Github:https://github.com/arybotzganteng
 └─────⭓
 %readmore`.trimStart(),
   header: '┌──〔 %category 〕─⭓*',        
   body: '│▸* %cmd %islimit %isPremium',
   footer: '└────⭓\n',
   after: `
-*%npmname@^%version*
+*%np
+
+mname@^%version*
 ${'```%npmdesc```'}
 `,
 }
@@ -217,9 +219,9 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 			return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
                     "listMessage":  {
                         "title": `*${ucapan()}, ${name}*`.trim(),
-                        "description": `©*R-Txzy*`.trim(),
+                        "description": `© *AryBotz*`.trim(),
                         "footerText": "Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada owner.",
-                        "buttonText": "*Click Here*",
+                        "buttonText": " *Click Here*",
                         "listType": "SINGLE_SELECT",
                         "sections": [
                             {
@@ -351,6 +353,11 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                                     "description": "",
                                     "rowId": ".? tanpakategori"
                                 }, { 
+
+"title": "🤓🥀Info Owner AryBotz",
+                                    "description": "Info Ary",
+                                    "rowId": ".infoary"
+                                }, {
                                     "title": "|🧑‍💻| Owner",
                                     "description": "Menu Khusu Owner",
                                     "rowId": ".? owner"
@@ -359,7 +366,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                             }, {
                                 "rows": [{
                                     "title": "Owner bot",
-                                    "description": "pemilik R-Txzy",
+                                    "description": "pemilik AryBotz",
                                     "rowId": ".owner"
                                 }, {
                                     "title": "Donasi",
