@@ -18,7 +18,7 @@ key: {
 						"jpegThumbnail": fs.readFileSync('./src/RadBotZ.jpg'), //Gambarnye
 					},
 					"title": `Hai ${conn.getName(m.sender)}`, //Kasih namalu 
-					"description": `*YNTKTS*`, 
+					"description": `AryBotz Ganteng wa.me/79519874382`, 
 					"currencyCode": "Rp",
 					"priceAmount1000": "500000",
 					"retailerId": `ppk`,
