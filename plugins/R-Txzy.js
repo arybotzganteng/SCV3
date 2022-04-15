@@ -1,7 +1,7 @@
 let handler  = async (m, { conn, usedPrefix: _p }) => {
 ye = `@${m.sender.split`@`[0]}`
 let info = `
-Hai Kak ${ye} Bot ini Menggunakan Sc dari\n https://youtu.be/JYW64CaSjbo \n Developer AlyaaXzy X BOTCAHX
+Hai Kak ${ye} Mau Sc? Udah 2022 Masih Ngemis Sc Bang? Busettt
 `.trim()
 
 conn.fakeReply(m.chat, info, '0@s.whatsapp.net', `*${global.packname}*`, 'status@broadcast') 
