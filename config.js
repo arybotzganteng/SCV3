@@ -40,11 +40,11 @@ global.APIKeys = { // APIKey Here
   'https://bx-hunter.herokuapp.com': 'Ikyy69',
   'https://hardianto.xyz': 'hardianto',
   'https://neoxr-api.herokuapp.com': 'cfhXORi7',
-  'https://api.xteam.xyz': 'cristian9407',
+  'https://api.xteam.xyz': '7cf3fc56c3103d90',
   'https://api.lolhuman.xyz': 'Dawnfrostkey',
   'https://caliphapi.com': 'ELYASXD',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
-  'https://api.zeks.me': 'apivinz',
+  'https://api.zeks.me': 'CpGSLymOQy9KfTKgQZr9eDSYqqR',
   'https://pencarikode.xyz': 'pais',
   'https://fxc7-api.herokuapp.com': 'fxc7COOL',
   'https://leyscoders-api.herokuapp.com': 'dappakntlll'
