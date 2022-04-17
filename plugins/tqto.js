@@ -9,6 +9,8 @@ BIG THANKS TO
 •Ariffb
 •Rteam1
 •AlyaaXzy
+•AryBotz (Bot)
+•Ary (Owner)
 •BOTCAHX (Tio)
 •Raditya
 •Xteam
