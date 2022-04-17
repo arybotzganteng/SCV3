@@ -21,9 +21,9 @@ let handler  = async (m, { conn, usedPrefix }) => {
 ╠➥ *Total user:* ${totalreg} *user*
 ╠➥ *Uptime:* ${uptime}
 ║
-╠═〘 DONASI 〙 ═
-╠➥ GOPAY [6285730903853]
-╠➥ PULSA [6285730903853]
+╠═〘 DONASI 〙 ═ *Topup*
+╠➥ Maxus [60147751029]
+╠➥ Hotlink [60177945983]
 ║
 ║
 ║${readMore}
@@ -44,8 +44,9 @@ let handler  = async (m, { conn, usedPrefix }) => {
 ╠═ Creator : AlyaaXzy
 ╠═ Api xsteam :St4r
 ╠═ Resta
+╠═ AryBotz
 ╠═ Ariq
-╠═〘 AlyaaXzy 〙 ═`.trim()
+╠═〘 AryBotz 〙 ═`.trim()
      await conn.send2ButtonLoc(m.chat, await(await fetch(image)).buffer(), str, '©RadBotZ ⁩×͜×', 'Owner', '.owner', 'Menu', '.menu', m)
 }
 handler.help = ['infobot']
